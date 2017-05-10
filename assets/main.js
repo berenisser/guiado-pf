@@ -45,3 +45,16 @@ var productos = [
 		tipo: "computador"
 	}
 ];
+
+//Solucion imperativa
+var computadores = [];
+for(var i=0; i<productos.length; i++){
+	if (productos[i].tipo === "computador"){
+		computadores.push(productos[i]);
+	}
+}
+
+//Solucion declarativa
+var computadores = productos.filter(function(producto){
+	return producto.tipo === "computador";
+});
