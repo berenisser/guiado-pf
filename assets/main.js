@@ -14,3 +14,34 @@ function intersection(l1,l2){
 	}
 	return l3;
 }
+
+//Solucion de manera declarativa
+function intersectionSet2(l1,l2){
+	return l1.filter(function(n){
+		return l2.indexOf(n) !== -1
+	});
+}
+
+//Segundo ejercicio
+var productos = [
+	{
+		nombre: "pijama",
+		tipo: "ropa"
+	},
+	{
+		nombre: "nevera",
+		tipo: "electrodomestico"
+	},
+	{
+		nombre: "asus",
+		tipo: "computador"
+	},
+	{
+		nombre: "macbook",
+		tipo: "computador"
+	},
+	{
+		nombre: "toshiba",
+		tipo: "computador"
+	}
+];
